@@ -9,9 +9,9 @@ int main()
 {
     mfxStatus sts = MFX_ERR_NONE;
     bool bEnableOutput = true;
-    
+
     FILE *fSource;
-    MSDK_FOPEN(fSource, "test.264", "rb");
+    MSDK_FOPEN(fSource, "/tmp/test.264", "rb");
     MSDK_CHECK_POINTER(fSource, MFX_ERR_NULL_PTR);
 
     // Create output YUV file
